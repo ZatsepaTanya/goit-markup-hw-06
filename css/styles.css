@@ -522,6 +522,13 @@ letter-spacing: 0.06em;
 color: #FFFFFF;
 
 }
+.post-social-button.social-icon{
+    padding-bottom: 13px;
+    padding-top: 13px;
+
+    width: 24px;
+height: 24px;
+}
 .backdrop{
     position: fixed;
     top: 0;
