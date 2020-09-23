@@ -205,6 +205,7 @@ img{
      background-image: url(../images/antenna.svg);
 
  }
+
  .icon-clock::before{
      background-image: url(../images/clock.svg);
  }
@@ -501,6 +502,8 @@ letter-spacing: 0.03em;
     padding-left: 16px;
 }
 .post-social-button{
+/* position: relative;  */
+
 width: 200px;
 height: 50px;
 margin-left: 12px;
@@ -514,19 +517,37 @@ font-style: normal;
 font-weight: bold;
 font-size: 16px;
 line-height: 30px;
+
+/* padding-left: 29px; */
 /* identical to box height, or 187% */
 
-/* display: flex;  */
-/* align-items: center;   */
- /* text-align: center;  */
+/* display: flex;   */
+/* align-items: center;    */
+ /* text-align: center;   */
 letter-spacing: 0.06em; 
 
 color: #FFFFFF;
 
 }
-.post-social-button.social-icon{
-    padding-bottom: 13px;
-    padding-top: 13px;
+.post-social-button-send::after{
+    content: url(../images/iconsend.svg);
+    width: 24px;
+    height: 24px;
+    padding-left: 10px; 
+    /* padding-top: 13px; */
+    /* padding-bottom: 13px; */
+    background-position: center;
+}
+.post-social-button .social-icon{
+    /* position: absolute; */
+    /* top: 50%; */
+
+   
+    right: 8px; 
+    top: 13px; 
+    bottom: 13px; 
+    /* padding-bottom: 13px; */
+    /* padding-top: 13px; */
 
     width: 24px;
     height: 24px;
@@ -605,20 +626,44 @@ border: 1px solid rgba(0, 0, 0, 0.1);
     .form-group{
         display: flex;
         flex-direction: column;
+        
     }
-
+    .form-group:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .form-group:last-child{
+        margin-bottom: 20px ;}
     .form-group input{
         padding-bottom: 12px;
         padding-top: 12px;
+        padding-left: 42px;
 
         border: 1px solid rgba(33, 33, 33, 0.2);
 
         border-radius: 4px;
+        width: 100%;
 
     }
+    .form-group input, textarea:focus{
+        outline-color: var(--accent-color);
+    }
+    .form-group-picture{
+        position: relative;
+    }
 
+    .picture{
+        /* display: inline-block; */
+        height: 18px;
+        width: 18px;
+        position: absolute;
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+
+    }
     .form-label{
-        /* position: absolute; */
+        
+        width: 100%;
     }
 
     .icon-form{
@@ -644,6 +689,9 @@ textarea{
     letter-spacing: 0,01em;
     text-align: left;
   
+  }
+  .form-textarea{
+      padding: 12px 16px;
   }
 
   
