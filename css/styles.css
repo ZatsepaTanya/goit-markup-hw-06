@@ -497,9 +497,11 @@ letter-spacing: 0.03em;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: #000000;
     color:#ffffff;
+
+    padding-left: 16px;
 }
 .post-social-button{
-    width: 200px;
+width: 200px;
 height: 50px;
 margin-left: 12px;
 
@@ -514,10 +516,10 @@ font-size: 16px;
 line-height: 30px;
 /* identical to box height, or 187% */
 
-/* display: flex; */
-/* align-items: center; */
-/* text-align: center; */
-letter-spacing: 0.06em;
+/* display: flex;  */
+/* align-items: center;   */
+ /* text-align: center;  */
+letter-spacing: 0.06em; 
 
 color: #FFFFFF;
 
@@ -527,8 +529,12 @@ color: #FFFFFF;
     padding-top: 13px;
 
     width: 24px;
-height: 24px;
+    height: 24px;
+
+
 }
+
+
 .backdrop{
     position: fixed;
     top: 0;
@@ -610,6 +616,14 @@ border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 4px;
 
     }
+
+    .form-label{
+        /* position: absolute; */
+    }
+
+    .icon-form{
+        position: absolute;
+    }
 textarea{ 
     resize: none; 
  } 
@@ -639,6 +653,7 @@ width: 200px;
 height: 50px;
 
 margin-top: 30px;
+/* margin-left: 165px; */
 
 background: #188CE8;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -652,7 +667,7 @@ font-size: 16px;
 line-height: 30px;
 /* identical to box height, or 187% */
 
-display: flex;
+/* display: flex;  */
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
@@ -660,6 +675,7 @@ letter-spacing: 0.06em;
 color: #FFFFFF;
 
 }
+
 .address{
     color:#ffffff;
     font-size: 14px;
